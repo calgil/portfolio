@@ -6,7 +6,10 @@ export const SideBar = () => {
   return (
     <div className={s.sideBar}>
       <div className={s.content}>
-        <div className={s.photo}></div>
+        <div className={s.logo}>
+          <Image src="/logo.webp" alt="logo" width={78} height={118} />
+        </div>
+
         <ul className={s.links}>
           <li className={s.link}>
             <span className={s.number}>0.1</span> About
