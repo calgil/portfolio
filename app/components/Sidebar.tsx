@@ -1,6 +1,9 @@
 import Image from "next/image";
 import s from "../styles/components/Sidebar.module.scss";
 import Link from "next/link";
+import classNames from "classnames/bind";
+
+let cx = classNames.bind(s);
 
 export const SideBar = () => {
   return (
@@ -23,12 +26,12 @@ export const SideBar = () => {
           <li className={s.link}>
             <span className={s.number}>0.4</span> Contact
           </li>
-          <li className={s.link}>
+          <li className={cx("link", "no-line")}>
             <Link href="https://www.linkedin.com/in/calvin-gilbert-developer/">
               <Image src="/li.webp" alt="li" width={21} height={21} />
             </Link>
           </li>
-          <li className={s.link}>
+          <li className={cx("link", "no-line")}>
             <Link href="https://github.com/calgil">
               <Image src="/github.webp" alt="git hub" width={21} height={21} />
             </Link>

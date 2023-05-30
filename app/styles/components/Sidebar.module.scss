@@ -3,15 +3,17 @@
 .sideBar {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
   height: 100vh;
+  padding: 0 30px;
 
   .content {
     height: 100%;
     overflow-y: hidden;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 100%;
 
     .logo {
       margin-top: 65px;
@@ -21,19 +23,47 @@
       list-style: none;
 
       .link {
+        position: relative;
         font-weight: 700;
         margin-bottom: 16px;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
 
         .number {
           color: a.$highlight;
           margin-right: 8px;
         }
+
+        &:hover {
+          transform: scale(1.07);
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 1px;
+          background: linear-gradient(to right, a.$highlight 70%, transparent);
+          opacity: 0;
+          transition: opacity 150ms ease-in-out;
+        }
+
+        &:hover::after {
+          opacity: 1;
+        }
+        &.no-line {
+          transition: all 200ms ease-in-out;
+          &:hover::after {
+            opacity: 0;
+          }
+        }
       }
     }
     .line {
-      background-color: a.$highlight;
+      background: linear-gradient(0deg, transparent 60%, #64ffda);
       height: 100%;
       width: 3px;
+      margin-left: 7px;
     }
   }
 }
