@@ -13,7 +13,14 @@ export default function Home() {
       </section>
       <section>
         <h2 className={s.title}>Work</h2>
-        <ProjectCard />
+        <div className={s.work}>
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+          <ProjectCard />
+        </div>
       </section>
       <section>
         <h2 className={s.title}>Skills</h2>

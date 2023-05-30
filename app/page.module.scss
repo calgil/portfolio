@@ -1,8 +1,10 @@
 .main {
   padding-top: 200px;
+  margin-left: 200px;
 
   .intro {
     max-width: 500px;
+    margin-bottom: 40px;
 
     .hook {
       padding-left: 16px;
@@ -13,5 +15,12 @@
     font-weight: 600;
     font-size: 2rem;
     line-height: 50px;
+  }
+
+  .work {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0 10px;
   }
 }
