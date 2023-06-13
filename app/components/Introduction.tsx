@@ -11,7 +11,7 @@ export const Introduction = () => {
           captivating web experiences.
         </p>
         <p className={s.text}>
-          With a strong foundation in JavaScript, React, Next, I am adept at
+          With a strong foundation in JavaScript, React, and Next, I am adept at
           building responsive interfaces, and optimizing performance.
         </p>
         <p className={s.text}>

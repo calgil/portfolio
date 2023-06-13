@@ -1,15 +1,6 @@
 import s from "../styles/components/Skills.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faHtml5,
-  faCss3,
-  faSass,
-  faJs,
-  faReact,
-  faNodeJs,
-  faGit,
-} from "@fortawesome/free-brands-svg-icons";
-import { icons } from "../types/skills.types";
+import { icons } from "../data/skills";
 
 export const Skills = () => {
   return (
@@ -18,7 +9,7 @@ export const Skills = () => {
       <div className={s.skills}>
         {icons.map((skill) => (
           <div key={skill.name} className={s.skill}>
-            <FontAwesomeIcon icon={skill.icon} />
+            <FontAwesomeIcon icon={skill.icon} size="2xl" />
             <p>{skill.name}</p>
           </div>
         ))}
