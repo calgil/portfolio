@@ -1,0 +1,15 @@
+@use "../abstracts" as a;
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  color: a.$highlight;
+  gap: 15px;
+
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+}

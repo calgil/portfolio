@@ -2,25 +2,10 @@
   padding-top: 200px;
   margin-left: 200px;
 
-  .intro {
-    max-width: 500px;
-    margin-bottom: 40px;
-
-    .hook {
-      padding-left: 16px;
-    }
-  }
-
-  .title {
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 50px;
-  }
-
   .work {
     display: flex;
-    gap: 40px;
+    gap: 25px;
     flex-wrap: wrap;
-    padding: 0 10px;
+    padding: 10px 0;
   }
 }

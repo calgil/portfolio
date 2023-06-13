@@ -2,6 +2,8 @@ import Image from "next/image";
 import s from "../styles/components/Sidebar.module.scss";
 import Link from "next/link";
 import classNames from "classnames/bind";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 let cx = classNames.bind(s);
 
@@ -27,14 +29,10 @@ export const SideBar = () => {
             <span className={s.number}>0.4</span> Contact
           </li>
           <li className={cx("link", "no-line")}>
-            <Link href="https://www.linkedin.com/in/calvin-gilbert-developer/">
-              <Image src="/li.webp" alt="li" width={21} height={21} />
-            </Link>
+            <FontAwesomeIcon icon={faLinkedin} size="xl" />
           </li>
           <li className={cx("link", "no-line")}>
-            <Link href="https://github.com/calgil">
-              <Image src="/github.webp" alt="git hub" width={21} height={21} />
-            </Link>
+            <FontAwesomeIcon icon={faGithub} size="xl" />
           </li>
         </ul>
         <div className={s.line}></div>

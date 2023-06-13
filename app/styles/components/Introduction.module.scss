@@ -1,0 +1,22 @@
+.intro {
+  max-width: 650px;
+  margin-bottom: 40px;
+
+  .title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 50px;
+  }
+
+  .hook {
+    padding-left: 16px;
+
+    .text {
+      margin: 8px 0;
+      font-size: 1.25rem;
+      font-weight: 500;
+
+      line-height: 32px;
+    }
+  }
+}

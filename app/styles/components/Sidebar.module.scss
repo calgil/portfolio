@@ -55,6 +55,7 @@
           opacity: 1;
         }
         &.no-line {
+          color: a.$highlight;
           transition: all 200ms ease-in-out;
           &:hover::after {
             opacity: 0;
@@ -63,7 +64,7 @@
       }
     }
     .line {
-      background: linear-gradient(0deg, transparent 60%, #64ffda);
+      background: linear-gradient(0deg, transparent 60%, a.$highlight);
       height: 100%;
       width: 3px;
       margin-left: 7px;
