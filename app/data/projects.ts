@@ -3,26 +3,26 @@ import { ProjectCardDetails } from "../types/projectCardDetails.type";
 export const projectCards: ProjectCardDetails[] = [
   {
     title: "Veterinary Hospital",
-    imgPath: "/link.webp",
+    imgPath: "/parks.png",
     url: "#",
     skills: ["Next", "Node", "SCSS"],
   },
   {
     title: "Solar",
-    imgPath: "/link.webp",
+    imgPath: "/parks.png",
     url: "#",
     skills: ["React", "Typescript", "SCSS"],
   },
   {
     title: "Parks App",
-    imgPath: "/link.webp",
+    imgPath: "/parks.png",
     url: "#",
     skills: ["React", "React-Router-Dom"],
   },
   {
-    title: "14ers App",
-    imgPath: "/link.webp",
-    url: "#",
+    title: "Hiking App",
+    imgPath: "/14ers.webp",
+    url: "https://www.climb-colorado-fourteeners.app/",
     skills: ["React", "Amazon S3", "Express"],
   },
 ];

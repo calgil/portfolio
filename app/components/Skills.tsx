@@ -4,8 +4,8 @@ import { icons } from "../data/skills";
 
 export const Skills = () => {
   return (
-    <section>
-      <h2>Skills</h2>
+    <section className={s.skillsContainer} id="skills">
+      <h2 className={s.title}>Skills</h2>
       <div className={s.skills}>
         {icons.map((skill) => (
           <div key={skill.name} className={s.skill}>

@@ -1,15 +1,25 @@
 @use "../abstracts" as a;
 
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  color: a.$highlight;
-  gap: 15px;
+.skillsContainer {
+  padding-top: 150px;
 
-  .skill {
+  .title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 50px;
+  }
+
+  .skills {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
+    flex-wrap: wrap;
+    color: a.$highlight;
+    gap: 15px;
+
+    .skill {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+    }
   }
 }

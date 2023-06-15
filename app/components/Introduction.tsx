@@ -2,7 +2,7 @@ import s from "../styles/components/Introduction.module.scss";
 
 export const Introduction = () => {
   return (
-    <section className={s.intro}>
+    <section id="about" className={s.intro}>
       <h1 className={s.title}>Hi, I&apos;m Calvin</h1>
       <div className={s.hook}>
         <p className={s.text}>
