@@ -26,6 +26,11 @@
 
     .link {
       transition: all 200ms ease-in-out;
+      color: a.$highlight;
+
+      &:visited {
+        color: a.$highlight;
+      }
 
       &:hover {
         transform: scale(1.09);
