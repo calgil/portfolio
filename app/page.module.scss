@@ -2,20 +2,7 @@
   margin-left: 200px;
 
   .title {
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 50px;
-  }
-
-  .workContainer {
-    padding-top: 150px;
-
-    .work {
-      display: flex;
-      gap: 25px;
-      flex-wrap: wrap;
-      padding: 10px 0;
-    }
+    @extend .title;
   }
 
   .contactContainer {

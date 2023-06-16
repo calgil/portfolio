@@ -1,6 +1,7 @@
 import { Introduction } from "./components/Introduction";
 import { ProjectCard } from "./components/ProjectCard";
 import { Skills } from "./components/Skills";
+import { Work } from "./components/Work";
 import { projectCards } from "./data/projects";
 import s from "./page.module.scss";
 
@@ -8,14 +9,15 @@ export default function Home() {
   return (
     <main className={s.main}>
       <Introduction />
-      <section className={s.workContainer} id="work">
+      <Work />
+      {/* <section className={s.workContainer} id="work">
         <h2 className={s.title}>Work</h2>
         <div className={s.work}>
           {projectCards.map((project) => (
             <ProjectCard key={project.title} project={project} />
           ))}
         </div>
-      </section>
+      </section> */}
       <Skills />
       <section id="contact" className={s.contactContainer}>
         <h2 className={s.title}>Contact</h2>

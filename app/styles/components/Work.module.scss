@@ -1,0 +1,16 @@
+@use "../abstracts" as a;
+
+.workContainer {
+  padding-top: 150px;
+
+  .title {
+    @extend .title;
+  }
+
+  .work {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+}
