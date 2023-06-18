@@ -5,16 +5,49 @@ import {
   faSquareJs,
   faReact,
   faNode,
-  faGit,
+  faGitAlt,
+  faGoogle,
+  faAws,
 } from "@fortawesome/free-brands-svg-icons";
-import { SkillIconType } from "../types/skills.types";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { SkillIconType, SkillImageType } from "../types/skills.types";
 
-export const icons: SkillIconType[] = [
-  { icon: faHtml5, name: "HTML" },
-  { icon: faCss3, name: "CSS" },
-  { icon: faSquareJs, name: "JavaScript" },
-  { icon: faReact, name: "React" },
-  { icon: faNode, name: "Node" },
-  { icon: faSass, name: "Sass" },
-  { icon: faGit, name: "Git" },
+export const skillIcons: SkillIconType[] = [
+  {
+    name: "JavaScript",
+    icon: faSquareJs,
+  },
+
+  {
+    name: "React",
+    icon: faReact,
+  },
+  {
+    name: "Node",
+    icon: faNode,
+  },
+  {
+    name: "Sass",
+    icon: faSass,
+  },
+  {
+    name: "HTML",
+    icon: faHtml5,
+  },
+  {
+    name: "CSS",
+    icon: faCss3,
+  },
+  {
+    name: "Git",
+    icon: faGitAlt,
+  },
+  { name: "Firebase", icon: faGoogle },
+  { name: "MongoDB", icon: faDatabase },
+  { name: "Amazon S3", icon: faAws },
+];
+
+export const skillImages: SkillImageType[] = [
+  { name: "TypeScript", imgSrc: "/ts.png" },
+  { name: "Next", imgSrc: "/next1.png" },
 ];

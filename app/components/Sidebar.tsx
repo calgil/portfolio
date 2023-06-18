@@ -29,7 +29,7 @@ export const SideBar = () => {
           </li>
           <li className={cx(s.navLink, { active: activeSection === "work" })}>
             <Link className={s.link} href="#work">
-              <span className={s.number}>0.2</span> Work
+              <span className={s.number}>0.2</span> Projects
             </Link>
           </li>
           <li className={cx(s.navLink, { active: activeSection === "skills" })}>

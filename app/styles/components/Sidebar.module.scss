@@ -60,7 +60,7 @@
         &:hover,
         &.active {
           color: a.$highlight;
-          transform: scale(1.07);
+          // transform: scale(1.07);
 
           &::after {
             opacity: 1;
@@ -69,22 +69,24 @@
 
         &.no-line {
           color: a.$highlight;
+          // color: white;
 
           &:hover,
           &.active {
+            color: white;
+            // color: a.$highlight;
             &::after {
               opacity: 0;
             }
           }
         }
       }
-
-      .line {
-        background: linear-gradient(0deg, transparent 60%, a.$highlight);
-        height: 100%;
-        width: 3px;
-        margin-left: 7px;
-      }
+    }
+    .line {
+      background: linear-gradient(0deg, transparent 60%, a.$highlight);
+      height: 100%;
+      width: 3px;
+      margin-left: 7px;
     }
   }
 }

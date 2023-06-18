@@ -10,15 +10,16 @@
   }
 
   .skills {
-    display: flex;
-    flex-wrap: wrap;
-    color: a.$highlight;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    color: #64ffda;
+    padding: 50px 120px;
 
     .skill {
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      align-items: center;
       gap: 5px;
     }
   }

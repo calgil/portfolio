@@ -4,19 +4,19 @@ export const projectCards: ProjectCardDetails[] = [
   {
     title: "Veterinary Hospital",
     imgPath: "/nsvrc.webp",
-    url: "#",
-    skills: ["Next", "Node", "SCSS"],
+    url: "https://www.northspringsvrc.com/",
+    skills: ["Next", "Node", "Typescript", "SCSS"],
   },
   {
     title: "Solar",
     imgPath: "/solar.webp",
-    url: "#",
-    skills: ["React", "Typescript", "SCSS"],
+    url: "https://solar-showcase.vercel.app/",
+    skills: ["React", "Firebase", "Typescript", "SCSS"],
   },
   {
     title: "Parks App",
     imgPath: "/coloParks.webp",
-    url: "#",
+    url: "https://github.com/calgil/parks-app",
     skills: ["React", "React-Router-Dom"],
   },
   {
